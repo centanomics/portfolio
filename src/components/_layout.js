@@ -4,15 +4,25 @@ import * as React from "react"
 import Header from './Header'
 import Footer from './Footer'
 
+//css
+
+const indexStyles = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  minHeight: "100vh",
+  margin: "0 auto",
+}
+
 // markup
 
 const Layout = ({ children }) => {
   return (
-    <main>
+    <div style={ indexStyles }>
       <Header/>
       {children}
       <Footer />
-    </main>
+    </div>
   )
 }
 
