@@ -1,12 +1,20 @@
 import * as React from "react"
 
+// styles
+const headerStyles = {
+  display: "grid",
+  gridTemplateAreas: "A A C C  C C C C  C B B B",
+}
+
 // markup
 
 const Header = () => {
   return (
-    <header>
-      Header
-    </header>
+    <div>
+      <header styles={ headerStyles } className="frame">
+        Header
+      </header>
+    </div>
   )
 }
 
