@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -15,7 +16,6 @@ module.exports = {
         name: "src",
         path: `${__dirname}/src/projects/`,
       },
-      __key: "images",
     },
   ],
 };
