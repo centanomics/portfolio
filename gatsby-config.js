@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "portfolio",
+    title: "Centanomics' Portfolio",
+    description: "A portfolio for Centanomics",
+    author: "Centanomics"
   },
   plugins: [
     "gatsby-plugin-image",
@@ -10,8 +12,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "src",
+        path: `${__dirname}/src/projects/`,
       },
       __key: "images",
     },
