@@ -1,12 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby'
 
+import Layout from '../components/_layout'
+
 const ProjectPost = ({ data }) => {
   const post = data.markdownRemark
   return (
-    <main>
+    <Layout>
       {post.frontmatter.title}
-    </main>
+    </Layout>
   )
 }
 
