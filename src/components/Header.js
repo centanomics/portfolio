@@ -1,6 +1,9 @@
+// imports
+
 import * as React from "react"
 
 // styles
+
 const headerStyles = {
   display: "grid",
   gridTemplateAreas: "A A C C  C C C C  C B B B",
