@@ -15,7 +15,20 @@ const Header = () => {
   return (
     <div>
       <header styles={ headerStyles } className="frame">
-        Header
+        <h1>Cent</h1>
+        <nav>
+          <ul>
+            <li>
+              About
+            </li>
+            <li>
+              Blog
+            </li>
+            <li>
+              Contact
+            </li>
+          </ul>
+        </nav>
       </header>
     </div>
   )
