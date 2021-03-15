@@ -3,6 +3,11 @@
   --opposite: #eac435;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
 .frame {
   margin: 0 auto;
   max-width: 1000px;
