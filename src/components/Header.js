@@ -7,32 +7,16 @@ import { Link } from "gatsby"
 
 import Logo from "./_logo"
 
-// styles
-
-const headerStyles = {
-  display: "grid",
-  gridTemplateAreas: "A A C C  C C C C  C B B B",
-}
-
-const logoStyles = {
-  gridArea: "A",
-}
-
-const navStyles = {
-  display: "inline-block",
-  gridArea: "B",
-}
-
 // markup
 
 const Header = () => {
   return (
     <div>
-      <header styles={ headerStyles } className="frame">
-        <Link to="/" styles={ logoStyles }>
+      <header className="frame main-header">
+        <Link to="/" className="logo" >
           <Logo size="25" color="black"/>
         </Link>
-        <nav styles={ navStyles } >
+        <nav className="navigation" >
           <ul>
             <li>
               <Link to="/about">

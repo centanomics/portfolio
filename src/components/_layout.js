@@ -6,21 +6,11 @@ import * as React from "react"
 import Header from './Header'
 import Footer from './Footer'
 
-// styles
-
-const indexStyles = {
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  minHeight: "100vh",
-  margin: "0 auto",
-}
-
 // markup
 
 const Layout = ({ children }) => {
   return (
-    <div style={ indexStyles }>
+    <div className="layout" >
       <Header/>
       {children}
       <Footer />
