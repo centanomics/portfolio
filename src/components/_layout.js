@@ -1,10 +1,12 @@
+// imports
+
 import * as React from "react"
 
-// component calls
+// components
 import Header from './Header'
 import Footer from './Footer'
 
-//css
+// styles
 
 const indexStyles = {
   display: "flex",

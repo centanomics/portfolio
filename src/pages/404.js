@@ -1,7 +1,10 @@
+// imports
+
 import * as React from "react"
 import { Link } from "gatsby"
 
 // styles
+
 const pageStyles = {
   color: "#232129",
   padding: "96px",
@@ -25,6 +28,7 @@ const codeStyles = {
 }
 
 // markup
+
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>

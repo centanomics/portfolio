@@ -3,6 +3,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
+// components
+
 import Logo from "./_logo"
 
 // styles

@@ -1,6 +1,9 @@
+// imports
+
 import * as React from "react"
 
-// calling components
+// components
+
 import Layout from '../components/_layout'
 
 // markup
