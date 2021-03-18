@@ -42,3 +42,14 @@ html {
   display: inline-block;
   grid-area: B;
 }
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation ul li {
+  list-style: none;
+}
