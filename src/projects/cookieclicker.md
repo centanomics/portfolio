@@ -4,7 +4,7 @@ index: 4
 title: Cookie Clicker
 startDate: "2019-12-21"
 dark: dark
-image: /cookieclicker2.jpg
+image: /cookieclicker.jpg
 live: https://cookieclicker2.centanomics.repl.co/
 repo: https://github.com/centanomics/cookieclicker2
 description: Repl.it MMO Hackathon Submission

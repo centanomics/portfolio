@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 
 // markup
 
-const Footer = () => {
+const Intro = () => {
   return (
     <div>
       <main className="frame intro">
@@ -21,7 +21,7 @@ const Footer = () => {
             </nav>
           </div>
           <button className="image" >
-            <img src="/me.png" />
+            <img src="/me.png" alt="minimalist Shannon" />
           </button>
         </section>
       </main>
@@ -29,4 +29,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Intro
