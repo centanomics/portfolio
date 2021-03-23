@@ -71,6 +71,10 @@ html {
   color: var(--color);
 }
 
+/*
+* MEDIA QUERIES
+*/
+
 @media(max-width: 1000px) {
   .main-header {
     grid-template-areas: "A A A A A A" "B B B B B B" "C C C C C C";
