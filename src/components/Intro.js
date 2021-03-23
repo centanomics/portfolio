@@ -1,6 +1,7 @@
 // imports
 
 import * as React from "react"
+import { Link } from 'gatsby'
 
 // markup
 
@@ -9,17 +10,17 @@ const Footer = () => {
     <div>
       <main className="frame intro">
         <section>
-          <div>
+          <div className="description" >
             <h2>Hello, world!</h2>
             <h1>I'm <span>Shannon</span></h1>
             <p>I design and develop Full Stack Applications</p>
             <nav>
-              <a>View Projects</a>
+              <a href="#projects">View Projects</a>
               <span> or </span>
-              <a>Read About Me</a>
+              <Link to="/about"> Read About Me</Link>
             </nav>
           </div>
-          <button>
+          <button className="image" >
             <img src="/me.png" />
           </button>
         </section>

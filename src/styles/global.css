@@ -1,6 +1,7 @@
 :root {
   --color: #29339b;
   --opposite: #eac435;
+  --gray: #959595;
 }
 
 html {
@@ -62,13 +63,43 @@ html {
   list-style: none;
 }
 
-.navigation ul li a {
+.navigation ul li a, .description a {
   color: black;
   text-decoration: none;
 }
 
-.navigation ul li a:hover {
+.navigation ul li a:hover, .description a:hover {
   color: var(--color);
+}
+
+/*
+* INTRO
+*/
+
+.description h2 {
+  color: var(--gray);
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.description h1 {
+  font-size: 6rem;
+}
+
+.description h1 span {
+  color: var(--color);
+}
+
+.description p {
+  font-size: 1.5rem;
+}
+.description a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.description nav span {
+  color: var(--gray);
 }
 
 /*
@@ -87,4 +118,6 @@ html {
   .navigation ul {
     flex-direction: column;
   }
+  /*-----*/
+
 }
