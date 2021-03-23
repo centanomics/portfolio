@@ -140,6 +140,18 @@ html {
 }
 
 /*
+* PROJECTS
+*/
+
+.project {
+  width: 100%
+}
+
+.project > a {
+  display: block;
+}
+
+/*
 * MEDIA QUERIES
 */
 
