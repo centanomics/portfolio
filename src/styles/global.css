@@ -39,12 +39,6 @@ html {
   /* justify-items: center; */
 }
 
-@media(max-width: 1000px) {
-  .main-header {
-    grid-template-areas: "A", "B", "C";
-  }
-}
-
 .logo {
   grid-area: A;
   justify-self: start;
@@ -52,7 +46,6 @@ html {
 
 .navigation {
   grid-area: B;
-  
 }
 
 .navigation ul {
@@ -76,4 +69,18 @@ html {
 
 .navigation ul li a:hover {
   color: var(--color);
+}
+
+@media(max-width: 1000px) {
+  .main-header {
+    grid-template-areas: "A A A A A A" "B B B B B B" "C C C C C C";
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
 }
