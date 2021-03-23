@@ -22,7 +22,7 @@ html {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 /*
@@ -32,15 +32,16 @@ html {
 .main-header {
   align-items: center;
   display: grid;
-  grid-template-areas: "A A C C  C C C C  C C B B";
-  grid-template-rows: 100px;
-  padding: 0 10px
+  grid-template-areas: 
+  "A C C C C B";
+  /* grid-template-rows: 100px; */
+  padding: 0 10px;
   /* justify-items: center; */
 }
 
 @media(max-width: 1000px) {
   .main-header {
-    grid-template-areas: "A A A A", "B B B B", "C C C C";
+    grid-template-areas: "A", "B", "C";
   }
 }
 
