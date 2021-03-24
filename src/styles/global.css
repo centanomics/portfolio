@@ -82,6 +82,7 @@ html {
   display: grid;
   grid-template-areas: "A A A A B B";
   align-items: center;
+  margin: 128px 0;
 }
 
 .description {
@@ -156,6 +157,8 @@ html {
 
 .projects > a {
   display: block;
+  text-decoration: none;
+  margin: 50px 0 10px;
 }
 
 .projectImage {

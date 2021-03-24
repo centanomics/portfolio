@@ -31,7 +31,7 @@ const Projects = () => {
   )
 
   return (
-    <section className="frame" id="Projects">
+    <section className="frame" id="projects">
       {data.allMarkdownRemark.edges.map(({ node }, index) => {
         console.log(node.fields.slug)
         return (
