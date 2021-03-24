@@ -146,6 +146,10 @@ html {
 * PROJECTS
 */
 
+#projects {
+  margin-bottom: 32px;
+}
+
 .projects {
   width: 100%;
 
@@ -171,8 +175,8 @@ html {
 
 .project {
   color: #ffffff;
-  padding: 64px 0 0 64px;
-}
+  padding: 64px 0 0 64px
+}  
 
 .project p {
   font-weight: bold;
@@ -196,6 +200,7 @@ footer {
   color: white;
   display: grid;
   grid-template-areas: "A B";
+  padding: 32px 0;
 }
 
 footer a {
@@ -218,6 +223,14 @@ footer a:hover {
   grid-area: B;
   max-width: 500px;
   justify-self: end;
+}
+
+.links nav a {
+  margin-right: 8px;
+}
+
+#footer-span::after {
+  content: ' to the right'
 }
 
 /*
@@ -253,6 +266,15 @@ footer a:hover {
   /*footer*/
   footer {
     grid-template-areas: "A" "B";
+    justify-content: center;
+  }
+
+  .outro, .links {
+    justify-self: start;
+  }
+
+  #footer-span::after {
+    content: ' below'
   }
 
 }
