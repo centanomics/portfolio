@@ -189,6 +189,38 @@ html {
 }
 
 /*
+* FOOTER
+*/
+
+footer {
+  color: white;
+  display: grid;
+  grid-template-areas: "A B";
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+footer a:hover {
+  border-bottom-color: var(--opposite);
+}
+
+.outro {
+  grid-area: A;
+  max-width: 500px;
+  justify-self: start;
+}
+
+.links {
+  grid-area: B;
+  max-width: 500px;
+  justify-self: end;
+}
+
+/*
 * MEDIA QUERIES
 */
 
@@ -216,6 +248,11 @@ html {
 
   .image {
     margin: 64px 0;
+  }
+
+  /*footer*/
+  footer {
+    grid-template-areas: "A" "B";
   }
 
 }
