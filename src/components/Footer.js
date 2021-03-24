@@ -6,9 +6,11 @@ import * as React from "react"
 
 const Footer = () => {
   return (
-    <footer>
-      Footer
-    </footer>
+    <div style={{backgroundColor: 'var(--color)'}}>
+      <footer className="frame">
+        hi
+      </footer>
+    </div>
   )
 }
 
