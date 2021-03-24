@@ -68,7 +68,9 @@ html {
   text-decoration: none;
 }
 
-.navigation ul li a:hover, .description a:hover {
+.navigation ul li a:hover,
+.description a:hover,
+.navigation ul li .activeLink {
   color: var(--color);
 }
 
