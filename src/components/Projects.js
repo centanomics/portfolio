@@ -35,10 +35,17 @@ const Projects = () => {
       {data.allMarkdownRemark.edges.map(({ node }, index) => {
         console.log(node.fields.slug)
         return (
-          <article key={index} className="project">
+          <article key={index} className="projects">
             <Link to={node.fields.slug}>
-              <div style={{ background: `url(${node.frontmatter.image})` }}>
-                hi
+              <div
+                style={{ backgroundImage: `url(${node.frontmatter.image})` }}
+                className="projectImage"
+              >
+                <div className={`project ${node.frontmatter.dark} lazy`}>
+                  <span>{node.frontmatter.description}</span>
+                  <p>{node.frontmatter.title}</p>
+                  <span>{node.frontmatter.startDate}</span>
+                </div>
               </div>
             </Link>
           </article>
