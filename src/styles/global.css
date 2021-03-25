@@ -263,6 +263,12 @@ footer a:hover {
     margin: 64px 0;
   }
 
+  /*projects*/
+
+  .projectImage {
+    width: 80%;
+  }
+
   /*footer*/
   footer {
     grid-template-areas: "A" "B";
