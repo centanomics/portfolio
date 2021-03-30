@@ -7,7 +7,7 @@ const ProjectPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      {post.frontmatter.title}
+      {post.html}
     </Layout>
   )
 }
