@@ -7,7 +7,7 @@ const ProjectPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      {post.html}
+      <article dangerouslySetInnerHTML={{ __html: post.html }}/>
     </Layout>
   )
 }
