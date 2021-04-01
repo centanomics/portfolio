@@ -1,12 +1,12 @@
 // imports
 
-import * as React from "react"
+import * as React from 'react';
 
 // markup
 
 const Footer = () => {
   return (
-    <div style={{backgroundColor: 'var(--color)'}}>
+    <div style={{ backgroundColor: 'var(--color)' }}>
       <footer className="frame">
         <div className="outro">
           <p>
@@ -14,10 +14,10 @@ const Footer = () => {
             know me more, check out the links<span id="footer-span"></span>.
           </p>
           <p>
-            Also, feel free to check{" "}
+            Also, feel free to check{' '}
             <a href="https://drive.google.com/file/d/1WL11lS3BhI1pKEkdWe1NSJviUX9UUjzl/view">
               this
-            </a>{" "}
+            </a>{' '}
             out
           </p>
         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
