@@ -14,8 +14,10 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <SEO title="404" description="You got lost huh" />
-      <h1>You took a wrong turn huh?</h1>
-      <Link to="/">Get back to safety.</Link>
+      <div className="frame page-404">
+        <h1>You took a wrong turn huh?</h1>
+        <Link to="/">Click here to get back to safety.</Link>
+      </div>
     </Layout>
   );
 };

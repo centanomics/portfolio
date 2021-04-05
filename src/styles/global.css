@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -33,8 +33,7 @@ html {
 .main-header {
   align-items: center;
   display: grid;
-  grid-template-areas: 
-  "A C C C C B";
+  grid-template-areas: 'A C C C C B';
   /* grid-template-rows: 100px; */
   padding: 0 10px;
   /* justify-items: center; */
@@ -63,7 +62,8 @@ html {
   list-style: none;
 }
 
-.navigation ul li a, .description a {
+.navigation ul li a,
+.description a {
   color: black;
   text-decoration: none;
 }
@@ -80,7 +80,7 @@ html {
 
 .intro section {
   display: grid;
-  grid-template-areas: "A A A A B B";
+  grid-template-areas: 'A A A A B B';
   align-items: center;
   margin: 128px 0;
 }
@@ -175,8 +175,8 @@ html {
 
 .project {
   color: #ffffff;
-  padding: 64px 0 0 64px
-}  
+  padding: 64px 0 0 64px;
+}
 
 .project p {
   font-weight: bold;
@@ -199,7 +199,7 @@ html {
 footer {
   color: white;
   display: grid;
-  grid-template-areas: "A B";
+  grid-template-areas: 'A B';
   padding: 32px 0;
 }
 
@@ -230,17 +230,34 @@ footer a:hover {
 }
 
 #footer-span::after {
-  content: ' to the right'
+  content: ' to the right';
+}
+
+/*
+* 404 PAGE
+*/
+
+.page-404 {
+  text-align: center;
+}
+
+.page-404 a {
+  color: black;
+  text-decoration: none;
+}
+
+.page-404 a:hover {
+  color: var(--color);
 }
 
 /*
 * MEDIA QUERIES
 */
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   /* header */
   .main-header {
-    grid-template-areas: "A A A A A A" "B B B B B B" "C C C C C C";
+    grid-template-areas: 'A A A A A A' 'B B B B B B' 'C C C C C C';
   }
 
   .logo {
@@ -252,10 +269,11 @@ footer a:hover {
   }
   /*intro*/
   .intro section {
-    grid-template-areas: "B" "A";
+    grid-template-areas: 'B' 'A';
   }
 
-  .image, .description {
+  .image,
+  .description {
     justify-self: center;
   }
 
@@ -272,16 +290,16 @@ footer a:hover {
 
   /*footer*/
   footer {
-    grid-template-areas: "A" "B";
+    grid-template-areas: 'A' 'B';
     justify-content: center;
   }
 
-  .outro, .links {
+  .outro,
+  .links {
     justify-self: start;
   }
 
   #footer-span::after {
-    content: ' below'
+    content: ' below';
   }
-
 }
