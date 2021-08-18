@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Centanomics',
     description:
-      'Centanomics is a Full Stack Developer that aims to solve complex problem while learning something new and having fun while doing it. Learn more about Cent here.',
+      'Centanomics, or Cent for short, is a Full Stack Developer that aims to solve complex programming problems while learning something new and having fun while doing it. Learn more about Cent here.',
     author: 'Centanomics',
   },
   plugins: [
