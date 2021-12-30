@@ -7,14 +7,14 @@ import * as React from 'react';
 import Layout from '../components/_layout';
 import Intro from '../components/Intro';
 import Projects from '../components/Projects';
-import SEO from '../components/_seo';
+import Seo from '../components/_seo';
 
 // markup
 
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <Seo title="Portfolio" />
       <Intro />
       <Projects />
     </Layout>

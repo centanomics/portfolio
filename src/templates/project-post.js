@@ -6,7 +6,7 @@ import { graphql } from 'gatsby';
 // components
 
 import Layout from '../components/_layout';
-import SEO from '../components/_seo';
+import Seo from '../components/_seo';
 
 // markup
 
@@ -14,7 +14,7 @@ const ProjectPost = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <Seo title={post.frontmatter.title} />
       <article dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   );

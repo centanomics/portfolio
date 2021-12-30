@@ -5,14 +5,14 @@ import * as React from 'react';
 // components
 
 import Layout from '../components/_layout';
-import SEO from '../components/_seo';
+import Seo from '../components/_seo';
 
 // markup
 
 const AboutPage = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title="Portfolio"
         description="Learn more about Centanomics and his interests professionally and personally here."
       />
