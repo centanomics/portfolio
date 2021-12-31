@@ -15,7 +15,7 @@ const Footer = () => {
           </p>
           <p>
             Also, feel free to check{' '}
-            <a href="https://drive.google.com/file/d/1WL11lS3BhI1pKEkdWe1NSJviUX9UUjzl/view">
+            <a href="https://drive.google.com/file/d/1rQ4hrvTiyDpEdmI3vHgc_CoBmYZi-IQh/view?usp=sharing">
               this
             </a>{' '}
             out
