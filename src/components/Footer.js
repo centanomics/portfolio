@@ -38,6 +38,9 @@ const Footer = () => {
             <a href="https://dev.to/centanomics">Dev.to</a>
           </nav>
         </div>
+        <div className="copyright">
+          <p>Copyright © {new Date().getFullYear()} Shannon Myers</p>
+        </div>
       </footer>
     </div>
   );

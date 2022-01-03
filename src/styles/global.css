@@ -199,7 +199,7 @@ html {
 footer {
   color: white;
   display: grid;
-  grid-template-areas: 'A B';
+  grid-template-areas: 'A B' 'C B';
   padding: 32px 0;
 }
 
@@ -223,6 +223,10 @@ footer a:hover {
   grid-area: B;
   max-width: 500px;
   justify-self: end;
+}
+
+.copyright {
+  grid-area: C;
 }
 
 .links nav a {
@@ -284,12 +288,13 @@ footer a:hover {
   /*projects*/
 
   .projectImage {
-    height: 50%;
+    width: 85vw;
+    height: 250px;
   }
 
   /*footer*/
   footer {
-    grid-template-areas: 'A' 'B';
+    grid-template-areas: 'A' 'B' 'C';
     justify-content: center;
   }
 
