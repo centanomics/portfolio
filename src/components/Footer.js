@@ -6,15 +6,15 @@ import * as React from 'react';
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: 'var(--color)' }}>
+    <div style={{ backgroundColor: 'var(--color)' }} className="footer-group">
       <footer className="frame">
         <div className="outro">
           <p>
-            Thanks for scrolling to the end of this page. If you want get to
+            Thanks for scrolling to the end of this page. If you want to get to
             know me more, check out the links<span id="footer-span"></span>.
           </p>
           <p>
-            Also, feel free to check{' '}
+            Also hirers, feel free to check{' '}
             <a href="https://drive.google.com/file/d/1rQ4hrvTiyDpEdmI3vHgc_CoBmYZi-IQh/view?usp=sharing">
               this
             </a>{' '}

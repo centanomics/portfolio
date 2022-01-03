@@ -272,8 +272,17 @@ footer a:hover {
     flex-direction: column;
   }
   /*intro*/
+  .intro {
+    width: 85vw;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+
   .intro section {
     grid-template-areas: 'B' 'A';
+    margin: 0;
   }
 
   .image,
@@ -290,12 +299,26 @@ footer a:hover {
   .projectImage {
     width: 85vw;
     height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project {
+    padding: 0 0 0 32px;
   }
 
   /*footer*/
   footer {
     grid-template-areas: 'A' 'B' 'C';
-    justify-content: center;
+    justify-content: left;
+    margin: 0 auto;
+    width: 85vw;
+  }
+
+  .outro p:first-child {
+    word-break: break-all;
+    overflow-x: auto;
   }
 
   .outro,
