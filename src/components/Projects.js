@@ -1,7 +1,7 @@
 // imports
 
-import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import * as React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 // markup
 
@@ -19,6 +19,7 @@ const Projects = () => {
                 description
                 repo
                 dark
+                live
               }
               fields {
                 slug
@@ -28,15 +29,15 @@ const Projects = () => {
         }
       }
     `
-  )
+  );
 
   return (
     <section className="frame" id="projects">
       {data.allMarkdownRemark.edges.map(({ node }, index) => {
-        console.log(node.fields.slug)
+        console.log(node.fields.slug);
         return (
           <article key={index} className="projects">
-            <Link to={node.fields.slug}>
+            <a href={node.frontmatter.live} target="_blank" rel="noreferrer">
               <div
                 style={{ backgroundImage: `url(${node.frontmatter.image})` }}
                 className="projectImage"
@@ -47,12 +48,12 @@ const Projects = () => {
                   <span>{node.frontmatter.startDate}</span>
                 </div>
               </div>
-            </Link>
+            </a>
           </article>
-        )
+        );
       })}
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
