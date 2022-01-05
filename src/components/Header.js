@@ -1,11 +1,11 @@
 // imports
 
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import { Link } from 'gatsby';
 
 // components
 
-import Logo from "./_logo"
+import Logo from './_logo';
 
 // markup
 
@@ -13,20 +13,18 @@ const Header = () => {
   return (
     <div>
       <header className="frame main-header">
-        <Link to="/" className="logo" >
-          <Logo size="25" color="black"/>
+        <Link to="/" className="logo">
+          <Logo size="25" color="black" />
         </Link>
-        <nav className="navigation" >
+        <nav className="navigation">
           <ul>
             <li>
-              <Link to="/about" activeClassName="activeLink">
+              <Link to="#" activeClassName="activeLink">
                 About
               </Link>
             </li>
             <li>
-              <a href="https://dailytwocents.dev">
-                Blog
-              </a>
+              <a href="https://dailytwocents.dev">Blog</a>
             </li>
             <li>
               <a href="mailto:centanomics@gmail.com?subject=Hi Cent!">
@@ -37,7 +35,7 @@ const Header = () => {
         </nav>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

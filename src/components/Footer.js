@@ -14,7 +14,7 @@ const Footer = () => {
             know me more, check out the links<span id="footer-span"></span>.
           </p>
           <p>
-            Also hirers, feel free to check{' '}
+            Also, feel free to check{' '}
             <a href="https://drive.google.com/file/d/1rQ4hrvTiyDpEdmI3vHgc_CoBmYZi-IQh/view?usp=sharing">
               this
             </a>{' '}
