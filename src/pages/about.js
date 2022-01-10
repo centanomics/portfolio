@@ -16,7 +16,9 @@ const AboutPage = () => {
         title="Portfolio"
         description="Learn more about Centanomics and his interests professionally and personally here."
       />
-      About
+      <section className="frame">
+        <h1>About</h1>
+      </section>
     </Layout>
   );
 };
