@@ -19,7 +19,7 @@ const Header = () => {
         <nav className="navigation">
           <ul>
             <li>
-              <Link to="#" activeClassName="activeLink">
+              <Link to="/about" activeClassName="activeLink">
                 About
               </Link>
             </li>

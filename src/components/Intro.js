@@ -19,7 +19,7 @@ const Intro = () => {
             <nav>
               <a href="#projects">View Projects</a>
               <span> or </span>
-              <Link to="#"> Read About Me</Link>
+              <Link to="/about"> Read About Me</Link>
             </nav>
           </div>
           <button className="image">
