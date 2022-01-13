@@ -13,7 +13,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <Seo
-        title="Portfolio"
+        title="About"
         description="Learn more about Centanomics and his interests professionally and personally here."
       />
       <section className="frame about">
@@ -23,7 +23,9 @@ const AboutPage = () => {
           the Atlanta Area. I enjoy taking ideas and bringing them to life
           through robust web applications. I first got interested in web
           development back in 2016 when I created a website for my high school
-          robotics team. I've enjoyed web development ever since!
+          robotics team. I've enjoyed web development ever since! Currently, I'm
+          using the MERN Stack, which includes MongoDB, Express, React, and
+          Node.js.
         </p>
         <p>
           A Problem solver, an organised person, and an eager learner. A person

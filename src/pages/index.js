@@ -14,7 +14,10 @@ import Seo from '../components/_seo';
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo title="Portfolio" />
+      <Seo
+        title="Portfolio"
+        description="The portfolio for the Full Stack Web Developer known as Shannon Myers - aka Cent"
+      />
       <Intro />
       <Projects />
     </Layout>
