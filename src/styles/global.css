@@ -1,0 +1,338 @@
+:root {
+  --color: #29339b;
+  --opposite: #eac435;
+  --gray: #959595;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.frame {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/*
+* LAYOUT
+*/
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 20px auto 0;
+}
+
+/*
+* HEADER
+*/
+
+.main-header {
+  align-items: center;
+  display: grid;
+  grid-template-areas: 'A C C C C B';
+  /* grid-template-rows: 100px; */
+  padding: 0 10px;
+  /* justify-items: center; */
+}
+
+.logo {
+  grid-area: A;
+  justify-self: start;
+}
+
+.navigation {
+  grid-area: B;
+}
+
+.navigation ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation ul li a,
+.description a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation ul li a:hover,
+.description a:hover,
+.navigation ul li .activeLink {
+  color: var(--color);
+}
+
+/*
+* INTRO
+*/
+
+.intro section {
+  display: grid;
+  grid-template-areas: 'A A A A B B';
+  align-items: center;
+  margin: 128px 0;
+}
+
+.description {
+  grid-area: A;
+  justify-self: start;
+}
+
+.image {
+  grid-area: B;
+  justify-self: end;
+}
+
+.description h2 {
+  color: var(--gray);
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 0 0 16px;
+}
+
+.description h1 {
+  font-size: 6rem;
+  margin: 0 0 0 -5px;
+}
+
+.description h1 span {
+  color: var(--color);
+}
+
+.description p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.description nav {
+  margin-top: 1rem;
+}
+
+.description a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.description nav span {
+  color: var(--gray);
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  background: none;
+  border: none;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/*
+* PROJECTS
+*/
+
+#projects {
+  margin-bottom: 32px;
+}
+
+.projects {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects > a {
+  display: block;
+  text-decoration: none;
+  margin: 50px 0 10px;
+}
+
+.projectImage {
+  width: 1000px;
+  height: 581px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project {
+  color: #ffffff;
+  padding: 64px 0 0 64px;
+}
+
+.project p {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 5px 0;
+}
+
+.project small:last-child {
+  font-style: italic;
+}
+
+.dark {
+  color: #000000;
+}
+
+/*
+* FOOTER
+*/
+
+footer {
+  color: white;
+  display: grid;
+  grid-template-areas: 'A B' 'C B';
+  padding: 32px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+}
+
+footer a:hover {
+  border-bottom-color: var(--opposite);
+}
+
+.outro {
+  grid-area: A;
+  max-width: 500px;
+  justify-self: start;
+}
+
+.links {
+  grid-area: B;
+  max-width: 500px;
+  justify-self: end;
+}
+
+.copyright {
+  grid-area: C;
+}
+
+.links nav a {
+  margin-right: 8px;
+}
+
+#footer-span::after {
+  content: ' to the right';
+}
+
+/*
+* 404 PAGE
+*/
+
+.page-404 {
+  text-align: center;
+}
+
+.page-404 a {
+  color: black;
+  text-decoration: none;
+}
+
+.page-404 a:hover {
+  color: var(--color);
+}
+
+/*
+* MEDIA QUERIES
+*/
+
+@media (max-width: 1100px) {
+  /* header */
+  .main-header {
+    grid-template-areas: 'A A A A A A' 'B B B B B B' 'C C C C C C';
+  }
+
+  .logo {
+    justify-self: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+  /*intro*/
+  .intro {
+    width: 90vw;
+  }
+
+  .intro h1 {
+    font-size: 4rem;
+  }
+
+  .intro section {
+    grid-template-areas: 'B' 'A';
+    margin: 0;
+  }
+
+  .image,
+  .description {
+    justify-self: center;
+    width: 90vw;
+  }
+
+  .image {
+    margin: 64px 0;
+    padding: 0;
+  }
+
+  /*projects*/
+
+  .projectImage {
+    width: 90vw;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project {
+    padding: 0 0 0 32px;
+  }
+
+  /* about */
+  .about {
+    width: 90vw;
+  }
+
+  /*footer*/
+  footer {
+    grid-template-areas: 'A' 'B' 'C';
+    justify-content: left;
+    margin: 0 auto;
+    width: 90vw;
+  }
+
+  .outro p:first-child {
+    width: 90vw;
+  }
+
+  .outro,
+  .links {
+    justify-self: start;
+  }
+
+  #footer-span::after {
+    content: ' below';
+  }
+}
