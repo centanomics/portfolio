@@ -9,5 +9,16 @@ module.exports = {
       'Cent is a Full Stack Developer that aims to solve complex programming problems while learning something new and having fun while doing it. Learn more about Cent here.',
     author: 'Centanomics',
   },
-  plugins: ['gatsby-plugin-image', 'gatsby-plugin-sharp'],
+  plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+    'gatsby-plugin-mdx',
+  ],
 };
