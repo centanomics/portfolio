@@ -1,8 +1,16 @@
+//imports
+
 import * as React from 'react';
+
+//components
+
 import Seo from '../components/_seo';
+import Layout from '../components/_layout';
+
+//markup
 
 const BlogPage = () => {
-  return <main>Blog</main>;
+  return <Layout>Blog</Layout>;
 };
 
 export default BlogPage;

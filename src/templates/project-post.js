@@ -11,11 +11,11 @@ import Seo from '../components/_seo';
 // markup
 
 const ProjectPost = ({ data }) => {
-  const post = data.markdownRemark;
+  const post = data.mdx;
   return (
     <Layout>
       <Seo title={post.frontmatter.title} />
-      <article dangerouslySetInnerHTML={{ __html: post.html }} />
+      <article dangerouslySetInnerHTML={{ __html: post.body }} />
     </Layout>
   );
 };

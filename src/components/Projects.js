@@ -9,7 +9,7 @@ const Projects = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allMdx(sort: { fields: [frontmatter___index], order: ASC }) {
+        allMdx(sort: { frontmatter: { index: ASC } }) {
           edges {
             node {
               frontmatter {
@@ -37,7 +37,7 @@ const Projects = () => {
         console.log(node.fields.slug);
         return (
           <article key={index} className='projects'>
-            <a href={node.frontmatter.live} target='_blank' rel='noreferrer'>
+            <Link href={node.fields.slug}>
               <div
                 style={{ backgroundImage: `url(${node.frontmatter.image})` }}
                 className='projectImage'
@@ -48,7 +48,7 @@ const Projects = () => {
                   <span>{node.frontmatter.startDate}</span>
                 </div>
               </div>
-            </a>
+            </Link>
           </article>
         );
       })}

@@ -1,8 +1,16 @@
+//imports
+
 import * as React from 'react';
+
+//components
+
 import Seo from '../components/_seo';
+import Layout from '../components/_layout';
+
+//markup
 
 const AboutPage = () => {
-  return <main>About</main>;
+  return <Layout>About</Layout>;
 };
 
 export default AboutPage;
