@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { graphql } from 'gatsby';
+import MarkdownView from 'react-showdown';
 
 // components
 
@@ -15,7 +16,9 @@ const ProjectPost = ({ data }) => {
   return (
     <Layout>
       <Seo title={post.frontmatter.title} />
-      <article dangerouslySetInnerHTML={{ __html: post.body }} />
+      <article className='frame'>
+        <MarkdownView markdown={post.body} />
+      </article>
     </Layout>
   );
 };

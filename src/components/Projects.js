@@ -37,7 +37,7 @@ const Projects = () => {
         console.log(node.fields.slug);
         return (
           <article key={index} className='projects'>
-            <Link href={node.fields.slug}>
+            <Link href={node.fields.slug} rel='noreferrer'>
               <div
                 style={{ backgroundImage: `url(${node.frontmatter.image})` }}
                 className='projectImage'

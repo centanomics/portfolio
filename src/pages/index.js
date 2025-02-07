@@ -22,7 +22,7 @@ export default IndexPage;
 
 export const Head = () => (
   <Seo
-    title='Shannon "Cent" Myers'
+    title='Portfolio'
     description='The portfolio for the Full Stack Web Developer known as Shannon "Cent" Myers.'
   />
 );

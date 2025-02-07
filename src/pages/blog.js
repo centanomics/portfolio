@@ -16,5 +16,5 @@ const BlogPage = () => {
 export default BlogPage;
 
 export const Head = () => (
-  <Seo title='About' description='The blog page for Cent' />
+  <Seo title='Blog' description='The blog page for Cent' />
 );

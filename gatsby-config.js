@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Portfolio`,
+    title: `Centanomics`,
     siteUrl: `https://centanomics.dev`,
     description:
       'Cent is a Full Stack Developer that aims to solve complex programming problems while learning something new and having fun while doing it. Learn more about Cent here.',
