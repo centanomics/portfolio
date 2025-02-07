@@ -17,6 +17,7 @@ const ProjectPost = ({ data }) => {
     <Layout>
       <Seo title={post.frontmatter.title} />
       <article className='frame'>
+        <h1>HI</h1>
         <MarkdownView markdown={post.body} />
       </article>
     </Layout>
